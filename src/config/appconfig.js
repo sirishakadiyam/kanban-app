@@ -9,14 +9,14 @@ export const appConfig = {
 export function getConfigError() {
   if (
     !appConfig.supabaseUrl || 
-    appConfig.supabaseUrl === "https://bknzvargvlgooyqfarej.supabase.co"
+    appConfig.supabaseUrl === "PASTE_YOUR_SUPABASE_URL_HERE"
   ) {
     return "Supabase URL is missing. Add VITE_SUPABASE_URL to .env or paste the URL into src/config/appConfig.js.";
   }
 
   if (
     !appConfig.supabaseAnonKey ||
-    appConfig.supabaseAnonKey === "sb_publishable_vkdsNoV-h_RSEQep3hB44A_Ka_rwnFD"
+    appConfig.supabaseAnonKey === "PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE"
   ) {
     return "Supabase publishable key is missing. Add VITE_SUPABASE_ANON_KEY to .env or paste the key into src/config/appConfig.js.";
   }
